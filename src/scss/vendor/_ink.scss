@@ -1,0 +1,474 @@
+#outlook a {
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+  min-width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#backgroundTable {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  line-height: 100% !important;
+}
+
+img {
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%;
+  clear: both;
+  vertical-align: middle;
+}
+
+center {
+  width: 100%;
+  min-width: $main-width;
+}
+
+a img {
+  border: none;
+}
+
+p {
+  margin: 0 0 0 $vertical-gutter;
+}
+
+b {
+  white-space: nowrap;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  word-break: break-word;
+  hyphens: auto;
+  border-collapse: collapse !important;
+}
+
+table, tr, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+hr {
+  color: #d9d9d9;
+  background-color: #d9d9d9;
+  height: 1px;
+  border: none;
+}
+
+/* Responsive Grid */
+
+table.body {
+  height: 100%;
+  width: 100%;
+}
+
+table.container {
+  width: $main-width;
+  margin: $container-margin auto;
+  text-align: inherit;
+}
+
+table.row {
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+table.container table.row {
+  display: block;
+}
+
+td.wrapper {
+  padding: 0 $col-gutter ($col-gutter/2)  0;
+  position: relative;
+}
+
+table.columns,
+table.column {
+  margin: 0 auto;
+}
+
+table.row td.last,
+table.container td.last {
+  padding-right: 0;
+
+  table {
+    &.one {
+      width: $column-width;
+    }
+    &.two {
+      width: $column-width * 2;
+    }
+    &.three {
+      width: $column-width * 3;
+    }
+    &.four {
+      width: $column-width * 4;
+    }
+    &.five {
+      width: $column-width * 5;
+    }
+    &.six {
+      width: $column-width * 6;
+    }
+    &.seven {
+      width: $column-width * 7;
+    }
+    &.eight {
+      width: $column-width * 8;
+    }
+    &.nine {
+      width: $column-width * 9;
+    }
+    &.ten {
+      width: $column-width * 10;
+    }
+    &.eleven {
+      width: $column-width * 11;
+    }
+    &.twelve {
+      width: $column-width * 12;
+    }
+  }
+}
+
+table {
+  &.one {
+    width: $column-width - $col-gutter;
+  }
+  &.two {
+    width: $column-width * 2 - $col-gutter;
+  }
+  &.three {
+    width: $column-width * 3 - $col-gutter;
+  }
+  &.four {
+    width: $column-width * 4 - $col-gutter;
+  }
+  &.five {
+    width: $column-width * 5 - $col-gutter;
+  }
+  &.six {
+    width: $column-width * 6 - $col-gutter;
+  }
+  &.seven {
+    width: $column-width * 7 - $col-gutter;
+  }
+  &.eight {
+    width: $column-width * 8 - $col-gutter;
+  }
+  &.nine {
+    width: $column-width * 9 - $col-gutter;
+  }
+  &.ten {
+    width: $column-width * 10 - $col-gutter;
+  }
+  &.eleven {
+    width: $column-width * 11 - $col-gutter;
+  }
+  &.twelve {
+    width: $column-width * 12 - $col-gutter;
+  }
+}
+
+
+// TODO: настроить отступы
+td.offset-by-one {
+  padding-left: 50px;
+}
+
+td.offset-by-two {
+  padding-left: 100px;
+}
+
+td.offset-by-three {
+  padding-left: 150px;
+}
+
+td.offset-by-four {
+  padding-left: 200px;
+}
+
+td.offset-by-five {
+  padding-left: 250px;
+}
+
+td.offset-by-six {
+  padding-left: 300px;
+}
+
+td.offset-by-seven {
+  padding-left: 350px;
+}
+
+td.offset-by-eight {
+  padding-left: 400px;
+}
+
+td.offset-by-nine {
+  padding-left: 450px;
+}
+
+td.offset-by-ten {
+  padding-left: 500px;
+}
+
+td.offset-by-eleven {
+  padding-left: 550px;
+}
+
+td.expander {
+  visibility: hidden;
+  width: 0;
+  padding: 0 !important;
+}
+
+table.columns .text-pad,
+table.column .text-pad {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table.columns .left-text-pad,
+table.columns .text-pad-left,
+table.column .left-text-pad,
+table.column .text-pad-left {
+  padding-left: 10px;
+}
+
+table.columns .right-text-pad,
+table.columns .text-pad-right,
+table.column .right-text-pad,
+table.column .text-pad-right {
+  padding-right: 10px;
+}
+
+/* Alignment & Visibility Classes */
+
+span.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img.center {
+  margin: 0 auto;
+  float: none;
+}
+
+/* Typography */
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+  color: $font-color;
+  font-family: $base-font-family;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: 1.3;
+  position: relative;
+  z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  word-break: normal;
+  margin-bottom: 1em;
+  color: $heading-color;
+  &.primed {
+    color: $primed-heading-color;
+  }
+  a {
+    color: $blue;
+  }
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+
+body, table.body, p, td {
+  font-size: $text-font-size;
+  line-height: $text-line-height;
+}
+
+p.lead, p.lede, p.leed {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+p {
+  margin-bottom: $text-line-height;
+}
+
+small {
+  font-size: 10px;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+/* Buttons */
+
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  overflow: hidden;
+
+  &.color-red {
+    a {
+      text-decoration: underline;
+      color: $pink;
+    }
+  }
+
+  &.blue {
+    td {
+      background: $button-background-color;
+      text-transform: uppercase;
+    }
+  }
+
+  td {
+    display: block;
+    width: auto !important;
+    text-align: center;
+    padding: 10px ($vertical-gutter * 2.5);
+
+    a {
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      color: $white;
+      font-size: 16px;
+    }
+
+  }
+
+}
+
+table.tiny-button td {
+  padding: 5px 0 4px;
+}
+
+table.small-button td {
+  padding: 8px 0 7px;
+}
+
+table.medium-button td {
+  padding: 12px 0 10px;
+}
+
+table.large-button td {
+  padding: 21px 0 18px;
+}
+
+table.tiny-button td a {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+table.small-button td a {
+  font-size: 16px;
+}
+
+table.medium-button td a {
+  font-size: 20px;
+}
+
+table.large-button td a {
+  font-size: 24px;
+}
+
+table.secondary td {
+  background: #e9e9e9;
+  border-color: #d0d0d0;
+  color: #555;
+}
+
+table.secondary td a {
+  color: #555;
+}
+
+table.secondary:hover td {
+  background: #d0d0d0 !important;
+  color: #555;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a {
+  color: #555 !important;
+}
+
+table.success td {
+  background: #5da423;
+  border-color: #457a1a;
+}
+
+table.success:hover td {
+  background: #457a1a !important;
+}
+
+table.alert td {
+  background: #c60f13;
+  border-color: #970b0e;
+}
+
+table.alert:hover td {
+  background: #970b0e !important;
+}
+
+table.radius td {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+table.round td {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+/* Outlook First */
+
+body.outlook p {
+  display: inline !important;
+}

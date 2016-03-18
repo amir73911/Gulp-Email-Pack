@@ -1,0 +1,49 @@
+@import "mixins";
+@import "variables";
+
+@import "vendor/ink";
+
+@import "custom";
+
+// Helper classes
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.color-white {
+  color: $white;
+}
+.color-gray {
+  color: $gray;
+}
+.color-red {
+  color: $pink;
+}
+.color-light-gray {
+  color: $light-gray;
+}
+.no-margin {
+  margin: 0 !important;
+}
+
+// Styling Classes
+.bordered {
+  border: 1px solid $lighten-gray;
+}
+.border-bottom {
+  border-bottom: 1px solid $lighten-gray;
+}
+.gray-block {
+  background-color: $lighten2-gray;
+}
+
+table.section {
+  width: 100%;
+  max-width: $main-width + ($main-padding * 2);
+  margin: $container-margin auto;
+  td.section-wrapper {
+    padding: 0 $main-padding;
+  }
+}

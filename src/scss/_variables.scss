@@ -1,0 +1,43 @@
+$main-width: rem-calc(800);
+$column-width: $main-width / 12;
+
+// Sizes:
+$vertical-gutter: rem-calc(16);
+$col-gutter: rem-calc(20);
+$main-padding: rem-calc(30);
+$container-margin: $vertical-gutter;
+
+// Colors:
+$black: #000;
+$pink: #da1d5f;
+$blue: #003399;
+$dark-blue: #002d75;
+$white: #fff;
+$lighten-gray: #e5e7e8;
+$lighten2-gray: #f3f4f5;
+$light-gray: #8b8b8b;
+$gray: #4b464c;
+
+$heading-color: #333;
+$primed-heading-color: $blue;
+$font-color: $black;
+$primed-color: $pink;
+$link-color: $pink;
+$button-background-color: $blue;
+$footer-text-color: $light-gray;
+
+// Typography:
+$base-font-family: "Arial", sans-serif;
+
+$h1-font-size: rem-calc(40);
+$h2-font-size: rem-calc(32);
+$h3-font-size: rem-calc(22);
+$h4-font-size: rem-calc(18);
+$h5-font-size: rem-calc(14);
+$h6-font-size: rem-calc(12);
+
+$text-font-size: rem-calc(15);
+$text-line-height: rem-calc(23);
+
+$footer-font-size: rem-calc(13);
+$footer-line-height: rem-calc(18);

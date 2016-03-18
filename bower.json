@@ -1,0 +1,25 @@
+{
+  "name": "Gulp-Email-Pack",
+  "description": "A gulp workflow for easing the creation of HTML emails",
+  "main": "gulpfile.js",
+  "authors": [
+    "Amir Gafurov"
+  ],
+  "license": "apache2",
+  "keywords": [
+    "GulpJS",
+    "Email"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ink": "^1.0.5"
+  }
+}
